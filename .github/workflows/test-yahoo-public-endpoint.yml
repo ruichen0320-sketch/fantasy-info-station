@@ -1,0 +1,29 @@
+
+name: Test Yahoo public read endpoint
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe Yahoo endpoints
+        shell: bash
+        run: |
+          set +e
+          for url in \
+            "https://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/standings" \
+            "https://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/458.l.10203/standings" \
+            "https://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/466.l.10203/standings"; do
+            echo "::group::Testing $url"
+            code=$(curl -L --max-time 20 -sS -o /tmp/yahoo-response.txt -w "%{http_code}" \
+              -H "User-Agent: Mozilla/5.0 FantasyInfoStation/1.0" \
+              -H "Accept: application/json, application/xml, text/xml, */*" "$url")
+            echo "HTTP_STATUS=$code"
+            if [ -f /tmp/yahoo-response.txt ]; then
+              head -c 1200 /tmp/yahoo-response.txt
+              echo
+            fi
+            echo "::endgroup::"
+          done
