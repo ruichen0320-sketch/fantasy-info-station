@@ -62,7 +62,6 @@ function renderRanks() {
     </tr>`;
   }).join('');
 }
-
 function renderMatches(matchups) {
   $('#weeklabel').textContent = `第 ${currentWeek} 週`;
 
@@ -78,25 +77,73 @@ function renderMatches(matchups) {
     let winsB = 0;
     let ties = 0;
 
+    const winnerMap = {};
+    winners.forEach(w => {
+      winnerMap[String(w.stat_id)] = w;
+
+      if (w.is_tied === '1') ties++;
+      else if (w.winner_team_key === a.team_key) winsA++;
+      else if (w.winner_team_key === b.team_key) winsB++;
+    });
+
+    const getValue = (team, id) => {
+      const stats = list(obj(obj(team.team_stats).stats).stat);
+      const item = stats.find(
+        s => String(s.stat_id) === String(id)
+      );
+
+      if (!item || item.value == null || item.value === '') {
+        return '—';
+      }
+
+      const value = String(item.value);
+
+      if (id === '5' || id === '8') {
+        return (Number(value) * 100).toFixed(1) + '%';
+      }
+
+      return value;
+    };
+
+    const statRows = Object.entries(catNames).map(([id, name]) => {
+      const w = winnerMap[id];
+      let leftClass = '';
+      let rightClass = '';
+
+      if (w?.is_tied === '1') {
+        leftClass = 'background:#f0f0f0;color:#666;';
+        rightClass = 'background:#f0f0f0;color:#666;';
+      } else if (w?.winner_team_key === a.team_key) {
+        leftClass = 'background:#f2effa;color:#6755ad;font-weight:750;';
+      } else if (w?.winner_team_key === b.team_key) {
+        rightClass = 'background:#f7eeee;color:#a45d5d;font-weight:750;';
+      }
+
+      return `<tr>
+        <td style="padding:9px 6px;border-bottom:1px solid #f2f0f7">
+          ${esc(name)}
+        </td>
+        <td style="padding:9px 6px;text-align:center;border-bottom:1px solid #f2f0f7;${leftClass}">
+          ${esc(getValue(a, id))}
+        </td>
+        <td style="padding:9px 6px;text-align:center;border-bottom:1px solid #f2f0f7;${rightClass}">
+          ${esc(getValue(b, id))}
+        </td>
+      </tr>`;
+    }).join('');
+
     const cats = winners.map(w => {
       const name = catNames[String(w.stat_id)];
 
       if (w.is_tied === '1') {
-        ties++;
         return `<span class="cat" style="background:#f0f0f0;color:#666">${esc(name)} 平手</span>`;
       }
 
       if (w.winner_team_key === a.team_key) {
-        winsA++;
         return `<span class="cat">${esc(name)}</span>`;
       }
 
-      if (w.winner_team_key === b.team_key) {
-        winsB++;
-        return `<span class="cat lose">${esc(name)}</span>`;
-      }
-
-      return '';
+      return `<span class="cat lose">${esc(name)}</span>`;
     }).join('');
 
     const scoreA = Number(obj(a.team_points).total || 0);
@@ -133,6 +180,19 @@ function renderMatches(matchups) {
 
       <div class="cats">${cats}</div>
 
+      <div style="margin-top:16px;overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="color:#77758a">
+              <th style="padding:8px 6px;text-align:left;font-weight:600">分類</th>
+              <th style="padding:8px 6px;text-align:center;font-weight:600">${esc(a.name)}</th>
+              <th style="padding:8px 6px;text-align:center;font-weight:600">${esc(b.name)}</th>
+            </tr>
+          </thead>
+          <tbody>${statRows}</tbody>
+        </table>
+      </div>
+
       <div class="muted" style="font-size:11px;margin-top:10px;text-align:center">
         ${status}
       </div>
@@ -142,12 +202,6 @@ function renderMatches(matchups) {
   $('#matchcards').innerHTML = cards
     ? `<div class="grid2">${cards}</div>`
     : '<div class="card">目前沒有可顯示的對戰資料。</div>';
-}
-function renderTeams() {
-  $('#teamselect').innerHTML = allTeams.map(t =>
-    `<option value="${esc(t.team_id)}">${esc(t.name)}</option>`
-  ).join('');
-  renderRoster();
 }
 function renderRoster() {
   const t = allTeams.find(
