@@ -203,6 +203,12 @@ function renderMatches(matchups) {
     ? `<div class="grid2">${cards}</div>`
     : '<div class="card">目前沒有可顯示的對戰資料。</div>';
 }
+  function renderTeams() {
+  $('#teamselect').innerHTML = allTeams.map(t =>
+    `<option value="${esc(t.team_id)}">${esc(t.name)}</option>`
+  ).join('');
+  renderRoster();
+}
 function renderRoster() {
   const t = allTeams.find(
     x => String(x.team_id) === $('#teamselect').value
