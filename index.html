@@ -35,4 +35,223 @@ function renderRoster(){let t=teams[Number($('#teamselect').value)||0];$('#roste
 function renderMoves(f='all'){let a=f==='all'?moves:moves.filter(m=>m.type===f);$('#moveslist').innerHTML=a.map(m=>'<div class="player"><div class="playerinfo"><div class="avatar">'+({Add:'＋',Drop:'−',Trade:'⇄'}[m.type])+'</div><div><div class="playername">'+m.player+'</div><div class="pos">'+m.team+' · '+m.time+'</div></div></div><span class="pill">'+({Add:'新增',Drop:'釋出',Trade:'交易'}[m.type])+'</span></div>').join('')}
 $$('.nav button').forEach(b=>b.addEventListener('click',()=>{$$('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');$$('.pane').forEach(p=>p.classList.add('hidden'));$('#'+b.dataset.tab).classList.remove('hidden')}));
 $('#prev').addEventListener('click',()=>{week=Math.max(1,week-1);renderMatches()});$('#next').addEventListener('click',()=>{week++;renderMatches()});$('#teamselect').addEventListener('change',renderRoster);$$('.filters button').forEach(b=>b.addEventListener('click',()=>{$$('.filters button').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderMoves(b.dataset.filter)}));renderRanks();renderMatches();renderTeams();renderMoves();
-</script></body></html>
+
+<script>
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const arr = x => !x ? [] : Array.isArray(x) ? x : [x];
+const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({
+  '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+}[c]));
+const obj = x => x && typeof x === 'object' ? x : {};
+const list = x => arr(obj(x).stat);
+const catNames = {
+  '5':'FG%', '8':'FT%', '10':'3PTM', '12':'PTS',
+  '15':'REB', '16':'AST', '17':'ST', '18':'BLK', '19':'TO'
+};
+let allTeams = [];
+let currentWeek = 2;
+let transactions = [];
+let teamDirectory = {};
+let loaded = false;
+
+function notice(message) {
+  $('.notice').textContent = message;
+}
+function statValue(team, id) {
+  const stats = list(obj(obj(team.team_stats).stats).stat);
+  const item = stats.find(s => String(s.stat_id) === String(id));
+  return item ? item.value : '—';
+}
+function renderRanks() {
+  const standings = allTeams.slice().sort(
+    (a,b) => Number(a.team_standings?.rank || 999) -
+             Number(b.team_standings?.rank || 999)
+  );
+  $('#rankrows').innerHTML = standings.map((t,i) => {
+    const s = obj(t.team_standings);
+    const o = obj(s.outcome_totals);
+    return `<tr>
+      <td><span class="rank">${esc(s.rank || i+1)}</span></td>
+      <td><b>${esc(t.name)}</b></td>
+      <td><b>${esc(o.wins || 0)}–${esc(o.losses || 0)}–${esc(o.ties || 0)}</b></td>
+      <td>${(Number(o.percentage || 0) * 100).toFixed(1)}%</td>
+      <td>#${esc(s.rank || i+1)}</td>
+    </tr>`;
+  }).join('');
+}
+function renderMatches(matchups) {
+  $('#weeklabel').textContent = `第 ${currentWeek} 週`;
+  const cards = arr(matchups).map(m => {
+    const pair = arr(obj(m.teams).team);
+    if (pair.length < 2) return '';
+    const [a,b] = pair;
+    const winners = arr(obj(m.stat_winners).stat_winner);
+    const scoreA = Number(obj(a.team_points).total || 0);
+    const scoreB = Number(obj(b.team_points).total || 0);
+    const cats = winners.map(w => {
+      const name = catNames[String(w.stat_id)];
+      if (!name) return '';
+      let cls = '';
+      if (w.is_tied === '1') cls = '';
+      else if (w.winner_team_key === a.team_key) cls = '';
+      else cls = 'lose';
+      const label = w.is_tied === '1' ? `${name} 平手` : name;
+      return `<span class="cat ${cls}">${esc(label)}</span>`;
+    }).join('');
+    return `<div class="card">
+      <div class="matchup">
+        <div class="side"><div class="name">${esc(a.name)}</div>
+          <div class="score">${scoreA}</div></div>
+        <div class="vs">VS</div>
+        <div class="side"><div class="name">${esc(b.name)}</div>
+          <div class="score">${scoreB}</div></div>
+      </div>
+      <div class="cats">${cats}</div>
+      <div class="muted" style="font-size:11px;margin-top:10px;text-align:center">
+        ${scoreA > scoreB ? esc(a.name) + ' 暫時領先' :
+          scoreB > scoreA ? esc(b.name) + ' 暫時領先' : '類別勝場相同'}
+      </div>
+    </div>`;
+  }).join('');
+  $('#matchcards').innerHTML = cards
+    ? `<div class="grid2">${cards}</div>`
+    : '<div class="card">目前沒有可顯示的對戰資料。</div>';
+}
+function renderTeams() {
+  $('#teamselect').innerHTML = allTeams.map(t =>
+    `<option value="${esc(t.team_id)}">${esc(t.name)}</option>`
+  ).join('');
+  renderRoster();
+}
+function renderRoster() {
+  const t = allTeams.find(
+    x => String(x.team_id) === $('#teamselect').value
+  ) || allTeams[0];
+  if (!t) return;
+  const moves = Number(t.number_of_moves || 0);
+  const trades = Number(t.number_of_trades || 0);
+  $('#roster').innerHTML = `
+    <div style="font-weight:750;margin:15px 0 8px">${esc(t.name)}</div>
+    <div class="player">
+      <div><div class="playername">本季異動次數</div>
+        <div class="pos">Yahoo Fantasy 聯盟資料</div></div>
+      <span class="pill">${moves} 次</span>
+    </div>
+    <div class="player">
+      <div><div class="playername">本季交易次數</div>
+        <div class="pos">Yahoo Fantasy 聯盟資料</div></div>
+      <span class="pill">${trades} 次</span>
+    </div>
+    <p class="muted" style="font-size:12px;line-height:1.7">
+      目前顯示真實球隊資料。球員名單尚未接通，因此不會以示範球員冒充真實名單。
+    </p>
+    <a href="${esc(t.url || 'https://basketball.fantasysports.yahoo.com/nba/10203')}"
+       target="_blank" rel="noopener">前往 Yahoo 查看完整球隊名單 ↗</a>`;
+}
+function renderMoves(filter = 'all') {
+  const filtered = transactions.filter(m => {
+    const type = String(m.type || '').toLowerCase();
+    if (filter === 'all') return true;
+    if (filter === 'Add') return type === 'add';
+    if (filter === 'Drop') return type === 'drop';
+    if (filter === 'Trade') return type === 'trade';
+    return true;
+  });
+  $('#moveslist').innerHTML = filtered.length ? filtered.map(m => {
+    const type = String(m.type || '').toLowerCase();
+    const players = arr(obj(m.players).player);
+    const names = players.map(p => obj(p.name).full || p.name || '球員').join('、');
+    const detail = players.map(p => {
+      const d = obj(p.transaction_data);
+      return d.destination_team_name || d.source_team_name || '';
+    }).filter(Boolean);
+    const label = type === 'add' ? '新增' :
+                  type === 'drop' ? '釋出' :
+                  type === 'trade' ? '交易' : type;
+    const time = m.timestamp
+      ? new Date(Number(m.timestamp) * 1000).toLocaleString('zh-TW', {
+          timeZone: 'Asia/Taipei', month:'numeric', day:'numeric',
+          hour:'2-digit', minute:'2-digit', hour12:false
+        })
+      : '時間未知';
+    return `<div class="player">
+      <div class="playerinfo">
+        <div class="avatar">${type === 'add' ? '＋' : type === 'drop' ? '−' : '⇄'}</div>
+        <div><div class="playername">${esc(names || '球員異動')}</div>
+          <div class="pos">${esc(detail.join(' / ') || '球隊異動')} · ${esc(time)}</div>
+        </div>
+      </div><span class="pill">${esc(label)}</span>
+    </div>`;
+  }).join('') : '<p class="muted">目前沒有符合條件的異動紀錄。</p>';
+}
+async function loadData() {
+  try {
+    notice('正在載入 Yahoo 聯盟資料…');
+    const response = await fetch('./data.json?ts=' + Date.now(), {cache:'no-store'});
+    if (!response.ok) throw new Error('資料檔讀取失敗：' + response.status);
+    const data = await response.json();
+    const endpoints = obj(data.endpoints);
+    for (const key of ['standings','scoreboard','teams','transactions']) {
+      if (!endpoints[key]?.ok) throw new Error(key + ' 資料尚未成功更新');
+    }
+    const league = obj(endpoints.standings.data?.league);
+    const standings = arr(obj(obj(league.standings).teams).team);
+    const teamData = arr(obj(obj(endpoints.teams.data?.league?.teams).team));
+    const board = obj(endpoints.scoreboard.data?.league?.scoreboard);
+    const matchups = arr(obj(board.matchups).matchup);
+    transactions = arr(obj(endpoints.transactions.data?.league?.transactions).transaction)
+      .filter(m => String(m.status || '').toLowerCase() === 'successful')
+      .sort((a,b) => Number(b.timestamp || 0) - Number(a.timestamp || 0));
+    allTeams = standings;
+    teamDirectory = Object.fromEntries(teamData.map(t => [String(t.team_id),t]));
+    currentWeek = Number(board.week || league.current_week || 1);
+    if (!allTeams.length) throw new Error('排名資料是空的');
+    renderRanks();
+    renderMatches(matchups);
+    renderTeams();
+    renderMoves();
+    $('#prev').disabled = true;
+    $('#next').disabled = true;
+    $('#prev').title = '目前資料來源提供本週對戰';
+    $('#next').title = '目前資料來源提供本週對戰';
+    const updated = data.updated_at
+      ? new Date(data.updated_at).toLocaleString('zh-TW', {timeZone:'Asia/Taipei'})
+      : '時間未知';
+    notice(`資料已連線 · ${league.name || 'Yahoo Fantasy'} · 更新：${updated}`);
+    $('.footer').innerHTML =
+      `Fantasy 情報站 · 資料來源：Yahoo Fantasy<br>最後同步時間：${esc(updated)} · 資料每 4 小時自動更新`;
+    $('.hero h2').textContent = league.name || '掌握每一場對戰。';
+    $('.hero .sub').textContent =
+      `共 ${allTeams.length} 支球隊 · 第 ${currentWeek} 週 · 9-CAT H2H`;
+    loaded = true;
+  } catch (error) {
+    console.error(error);
+    notice('資料載入失敗，請稍後重新整理');
+    $('#rankrows').innerHTML =
+      `<tr><td colspan="5">讀取失敗：${esc(error.message)}。請確認 data.json 已存在並成功更新。</td></tr>`;
+    $('#matchcards').innerHTML =
+      '<div class="card">目前無法載入對戰資料。</div>';
+    $('#roster').textContent = '目前無法載入球隊資料。';
+    $('#moveslist').textContent = '目前無法載入異動資料。';
+  }
+}
+
+$$('.nav button').forEach(b => b.addEventListener('click', () => {
+  $$('.nav button').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  $$('.pane').forEach(p => p.classList.add('hidden'));
+  $('#' + b.dataset.tab).classList.remove('hidden');
+}));
+$('#teamselect').addEventListener('change', renderRoster);
+$$('.filters button').forEach(b => b.addEventListener('click', () => {
+  $$('.filters button').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  renderMoves(b.dataset.filter);
+}));
+$('#prev').addEventListener('click', () => {});
+$('#next').addEventListener('click', () => {});
+loadData();
+</script>
+</body>
+</html>
