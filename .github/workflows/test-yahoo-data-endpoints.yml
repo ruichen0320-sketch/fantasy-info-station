@@ -1,0 +1,33 @@
+
+name: Test Yahoo league data endpoints
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test standings, scoreboard, teams, transactions, and players
+        shell: bash
+        run: |
+          set +e
+          base="https://pub-api-ro.fantasysports.yahoo.com/fantasy/v2"
+          for path in \
+            "league/nba.l.10203/standings" \
+            "league/nba.l.10203/scoreboard" \
+            "league/nba.l.10203/teams" \
+            "league/nba.l.10203/transactions" \
+            "league/nba.l.10203/players;start=0;count=3"; do
+            url="$base/$path"
+            echo "::group::Testing $url"
+            code=$(curl -L --max-time 20 -sS -o /tmp/yahoo-response.txt -w "%{http_code}" \
+              -H "User-Agent: Mozilla/5.0 FantasyInfoStation/1.0" \
+              -H "Accept: application/json, application/xml, text/xml, */*" "$url")
+            echo "HTTP_STATUS=$code"
+            if [ -f /tmp/yahoo-response.txt ]; then
+              head -c 1000 /tmp/yahoo-response.txt
+              echo
+            fi
+            echo "::endgroup::"
+          done
