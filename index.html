@@ -62,40 +62,83 @@ function renderRanks() {
     </tr>`;
   }).join('');
 }
+
 function renderMatches(matchups) {
   $('#weeklabel').textContent = `第 ${currentWeek} 週`;
+
   const cards = arr(matchups).map(m => {
     const pair = arr(obj(m.teams).team);
     if (pair.length < 2) return '';
-    const [a,b] = pair;
-    const winners = arr(obj(m.stat_winners).stat_winner);
-    const scoreA = Number(obj(a.team_points).total || 0);
-    const scoreB = Number(obj(b.team_points).total || 0);
+
+    const [a, b] = pair;
+    const winners = arr(obj(m.stat_winners).stat_winner)
+      .filter(w => catNames[String(w.stat_id)]);
+
+    let winsA = 0;
+    let winsB = 0;
+    let ties = 0;
+
     const cats = winners.map(w => {
       const name = catNames[String(w.stat_id)];
-      if (!name) return '';
-      let cls = '';
-      if (w.is_tied === '1') cls = '';
-      else if (w.winner_team_key === a.team_key) cls = '';
-      else cls = 'lose';
-      const label = w.is_tied === '1' ? `${name} 平手` : name;
-      return `<span class="cat ${cls}">${esc(label)}</span>`;
+
+      if (w.is_tied === '1') {
+        ties++;
+        return `<span class="cat" style="background:#f0f0f0;color:#666">${esc(name)} 平手</span>`;
+      }
+
+      if (w.winner_team_key === a.team_key) {
+        winsA++;
+        return `<span class="cat">${esc(name)}</span>`;
+      }
+
+      if (w.winner_team_key === b.team_key) {
+        winsB++;
+        return `<span class="cat lose">${esc(name)}</span>`;
+      }
+
+      return '';
     }).join('');
+
+    const scoreA = Number(obj(a.team_points).total || 0);
+    const scoreB = Number(obj(b.team_points).total || 0);
+
+    let status = '目前分類勝場相同';
+    if (winsA > winsB) status = `${esc(a.name)} 暫時領先`;
+    if (winsB > winsA) status = `${esc(b.name)} 暫時領先`;
+
     return `<div class="card">
       <div class="matchup">
-        <div class="side"><div class="name">${esc(a.name)}</div>
-          <div class="score">${scoreA}</div></div>
+        <div class="side">
+          <div class="name">${esc(a.name)}</div>
+          <div class="score">${scoreA}</div>
+        </div>
         <div class="vs">VS</div>
-        <div class="side"><div class="name">${esc(b.name)}</div>
-          <div class="score">${scoreB}</div></div>
+        <div class="side">
+          <div class="name">${esc(b.name)}</div>
+          <div class="score">${scoreB}</div>
+        </div>
       </div>
+
+      <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px;font-size:12px">
+        <span style="background:#f2effa;color:#6755ad;padding:5px 9px;border-radius:8px">
+          左隊 ${winsA} 勝
+        </span>
+        <span style="background:#f7eeee;color:#a45d5d;padding:5px 9px;border-radius:8px">
+          右隊 ${winsB} 勝
+        </span>
+        <span style="background:#f0f0f0;color:#666;padding:5px 9px;border-radius:8px">
+          平手 ${ties} 項
+        </span>
+      </div>
+
       <div class="cats">${cats}</div>
+
       <div class="muted" style="font-size:11px;margin-top:10px;text-align:center">
-        ${scoreA > scoreB ? esc(a.name) + ' 暫時領先' :
-          scoreB > scoreA ? esc(b.name) + ' 暫時領先' : '類別勝場相同'}
+        ${status}
       </div>
     </div>`;
   }).join('');
+
   $('#matchcards').innerHTML = cards
     ? `<div class="grid2">${cards}</div>`
     : '<div class="card">目前沒有可顯示的對戰資料。</div>';
