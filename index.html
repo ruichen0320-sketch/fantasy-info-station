@@ -227,30 +227,88 @@ const statRows = [a, b].map(team => {
   ).join('');
   renderRoster();
 }
+
 function renderRoster() {
+  const teamId = $('#teamselect').value;
   const t = allTeams.find(
-    x => String(x.team_id) === $('#teamselect').value
+    x => String(x.team_id) === teamId
   ) || allTeams[0];
+
   if (!t) return;
+
+  const rosterTeam = rosterTeams.find(
+    x => String(x.team_id) === String(t.team_id)
+  );
+
+  const players = arr(
+    obj(obj(rosterTeam?.roster).players).player
+  );
+
   const moves = Number(t.number_of_moves || 0);
   const trades = Number(t.number_of_trades || 0);
+
   $('#roster').innerHTML = `
-    <div style="font-weight:750;margin:15px 0 8px">${esc(t.name)}</div>
+    <div style="font-weight:750;margin:15px 0 8px">
+      ${esc(t.name)}
+    </div>
+
     <div class="player">
-      <div><div class="playername">本季異動次數</div>
-        <div class="pos">Yahoo Fantasy 聯盟資料</div></div>
+      <div>
+        <div class="playername">本季異動次數</div>
+        <div class="pos">Yahoo Fantasy 聯盟資料</div>
+      </div>
       <span class="pill">${moves} 次</span>
     </div>
+
     <div class="player">
-      <div><div class="playername">本季交易次數</div>
-        <div class="pos">Yahoo Fantasy 聯盟資料</div></div>
+      <div>
+        <div class="playername">本季交易次數</div>
+        <div class="pos">Yahoo Fantasy 聯盟資料</div>
+      </div>
       <span class="pill">${trades} 次</span>
     </div>
+
+    <div style="font-weight:750;margin:20px 0 10px">
+      球員名單（${players.length} 人）
+    </div>
+
+    ${players.length ? players.map(p => {
+      const name = obj(p.name);
+      const selected = obj(p.selected_position);
+      const teamAbbr = p.editorial_team_abbr || '';
+      const position = selected.position || p.display_position || '—';
+      const image = p.image_url || obj(p.headshot).url || '';
+
+      return `
+        <div class="player">
+          ${image ? `
+            <img
+              src="${esc(image)}"
+              alt="${esc(name.full || '球員')}"
+              style="width:44px;height:44px;object-fit:contain;flex-shrink:0"
+              loading="lazy"
+            >
+          ` : ''}
+          <div class="playerinfo" style="flex:1;min-width:0">
+            <div class="playername">${esc(name.full || '未知球員')}</div>
+            <div class="pos">${esc(teamAbbr)} · ${esc(p.display_position || '—')}</div>
+          </div>
+          <span class="pill">${esc(position)}</span>
+        </div>
+      `;
+    }).join('') : `
+      <p class="muted" style="font-size:12px;line-height:1.7">
+        目前沒有讀取到這支球隊的球員名單。
+      </p>
+    `}
+
     <p class="muted" style="font-size:12px;line-height:1.7">
-      目前顯示真實球隊資料。球員名單尚未接通，因此不會以示範球員冒充真實名單。
+      名單資料來自 Yahoo Fantasy，球員位置以最近一次同步的資料為準。
     </p>
+
     <a href="${esc(t.url || 'https://basketball.fantasysports.yahoo.com/nba/10203')}"
-       target="_blank" rel="noopener">前往 Yahoo 查看完整球隊名單 ↗</a>`;
+       target="_blank" rel="noopener">前往 Yahoo 查看完整球隊名單 ↗</a>
+  `;
 }
 function renderMoves(filter = 'all') {
   const filtered = transactions.filter(m => {
