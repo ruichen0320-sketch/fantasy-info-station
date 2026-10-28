@@ -301,6 +301,8 @@ async function loadData() {
     const league = obj(endpoints.standings.data?.league);
     const standings = arr(obj(obj(league.standings).teams).team);
     const teamData = arr(obj(obj(endpoints.teams.data?.league?.teams).team));
+    const rosterData = arr(obj(obj(endpoints.rosters.data?.league?.teams).team));
+rosterTeams = rosterData;
     const board = obj(endpoints.scoreboard.data?.league?.scoreboard);
     const matchups = arr(obj(board.matchups).matchup);
     transactions = arr(obj(endpoints.transactions.data?.league?.transactions).transaction)
