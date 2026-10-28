@@ -87,7 +87,7 @@ function renderMatches(matchups) {
     });
 
     const getValue = (team, id) => {
-      const stats = list(obj(obj(team.team_stats).stats).stat);
+      const stats = list(obj(team.team_stats).stats);
       const item = stats.find(
         s => String(s.stat_id) === String(id)
       );
