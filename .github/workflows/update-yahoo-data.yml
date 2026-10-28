@@ -34,6 +34,7 @@ jobs:
               "standings": f"league/{league}/standings",
               "scoreboard": f"league/{league}/scoreboard",
               "teams": f"league/{league}/teams",
+              "rosters": f"league/{league}/teams;out=roster",
               "transactions": f"league/{league}/transactions",
               "players": f"league/{league}/players;start=0;count=25",
           }
