@@ -1,6 +1,6 @@
 {
   "league_id": "10203",
-  "updated_at": "2026-10-28T16:08:10.394129+00:00",
+  "updated_at": "2026-10-28T17:05:23.316387+00:00",
   "endpoints": {
     "standings": {
       "ok": true,
@@ -1267,7 +1267,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/standings",
-          "time": "35.348892211914ms",
+          "time": "30.723810195923ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -2222,7 +2222,7 @@
                           "coverage_type": "week",
                           "week": "2",
                           "total": {
-                            "remaining_games": "33",
+                            "remaining_games": "26",
                             "live_games": "0",
                             "completed_games": "11"
                           }
@@ -2851,7 +2851,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard",
-          "time": "65.961122512817ms",
+          "time": "49.006938934326ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3304,7 +3304,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/teams",
-          "time": "31.426906585693ms",
+          "time": "35.400867462158ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3351,6 +3351,39 @@
           "season": "2026",
           "transactions": {
             "transaction": [
+              {
+                "transaction_key": "478.l.10203.tr.85",
+                "transaction_id": "85",
+                "type": "drop",
+                "status": "successful",
+                "timestamp": "1793205341",
+                "players": {
+                  "player": {
+                    "player_key": "478.p.10279",
+                    "player_id": "10279",
+                    "name": {
+                      "full": "Jaylon Tyson",
+                      "first": "Jaylon",
+                      "last": "Tyson",
+                      "ascii_first": "Jaylon",
+                      "ascii_last": "Tyson"
+                    },
+                    "editorial_team_abbr": "CLE",
+                    "display_position": "SG,SF,PF",
+                    "position_type": "P",
+                    "transaction_data": {
+                      "type": "drop",
+                      "source_type": "team",
+                      "source_team_key": "478.l.10203.t.4",
+                      "source_team_name": "又要再拿一冠😔",
+                      "destination_type": "waivers"
+                    }
+                  },
+                  "_attributes": {
+                    "count": "1"
+                  }
+                }
+              },
               {
                 "transaction_key": "478.l.10203.tr.83",
                 "transaction_id": "83",
@@ -6631,14 +6664,14 @@
               }
             ],
             "_attributes": {
-              "count": "82"
+              "count": "83"
             }
           }
         },
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/transactions",
-          "time": "22.850036621094ms",
+          "time": "31.934976577759ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -7869,7 +7902,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793119525"
               },
               {
@@ -7929,7 +7961,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/players;start=0;count=25",
-          "time": "29.807090759277ms",
+          "time": "23.38695526123ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
