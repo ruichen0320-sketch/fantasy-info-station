@@ -353,6 +353,14 @@ async function loadData() {
     if (!response.ok) throw new Error('資料檔讀取失敗：' + response.status);
     const data = await response.json();
     const endpoints = obj(data.endpoints);
+        weeklyMatchups = {};
+    for (let week = 1; week <= 25; week++) {
+      const weeklyBoard = endpoints[`scoreboard_week_${week}`];
+      if (weeklyBoard?.ok) {
+        const weeklyData = obj(weeklyBoard.data?.league?.scoreboard);
+        weeklyMatchups[week] = arr(obj(weeklyData.matchups).matchup);
+      }
+    }
     for (const key of ['standings','scoreboard','teams','transactions']) {
       if (!endpoints[key]?.ok) throw new Error(key + ' 資料尚未成功更新');
     }
@@ -371,13 +379,14 @@ rosterTeams = rosterData;
     currentWeek = Number(board.week || league.current_week || 1);
     if (!allTeams.length) throw new Error('排名資料是空的');
     renderRanks();
-    renderMatches(matchups);
+    renderMatches(weeklyMatchups[currentWeek] || matchups);
     renderTeams();
     renderMoves();
-    $('#prev').disabled = true;
-    $('#next').disabled = true;
-    $('#prev').title = '目前資料來源提供本週對戰';
-    $('#next').title = '目前資料來源提供本週對戰';
+       const availableWeeks = Object.keys(weeklyMatchups).map(Number).sort((a, b) => a - b);
+    $('#prev').disabled = !availableWeeks.some(w => w < currentWeek);
+    $('#next').disabled = !availableWeeks.some(w => w > currentWeek);
+    $('#prev').title = '查看上一週對戰';
+    $('#next').title = '查看下一週對戰';
     const updated = data.updated_at
       ? new Date(data.updated_at).toLocaleString('zh-TW', {timeZone:'Asia/Taipei'})
       : '時間未知';
@@ -412,8 +421,31 @@ $$('.filters button').forEach(b => b.addEventListener('click', () => {
   b.classList.add('active');
   renderMoves(b.dataset.filter);
 }));
-$('#prev').addEventListener('click', () => {});
-$('#next').addEventListener('click', () => {});
+let weeklyMatchups = {};
+
+$('#prev').addEventListener('click', () => {
+  const weeks = Object.keys(weeklyMatchups).map(Number).sort((a, b) => a - b);
+  const previous = weeks.filter(w => w < currentWeek).pop();
+
+  if (previous !== undefined) {
+    currentWeek = previous;
+    renderMatches(weeklyMatchups[currentWeek]);
+    $('#prev').disabled = !weeks.some(w => w < currentWeek);
+    $('#next').disabled = !weeks.some(w => w > currentWeek);
+  }
+});
+
+$('#next').addEventListener('click', () => {
+  const weeks = Object.keys(weeklyMatchups).map(Number).sort((a, b) => a - b);
+  const next = weeks.find(w => w > currentWeek);
+
+  if (next !== undefined) {
+    currentWeek = next;
+    renderMatches(weeklyMatchups[currentWeek]);
+    $('#prev').disabled = !weeks.some(w => w < currentWeek);
+    $('#next').disabled = !weeks.some(w => w > currentWeek);
+  }
+});
 loadData();
 </script>
 </body>
