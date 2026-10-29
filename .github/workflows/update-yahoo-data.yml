@@ -84,6 +84,12 @@ jobs:
                       "data": convert(root)
                   }
                   print(f"{name}: OK ({len(raw)} bytes)")
+                                    if name == "daily_players":
+                      sample = json.dumps(
+                          data["endpoints"][name]["data"],
+                          ensure_ascii=False
+                      )
+                      print("DAILY_PLAYERS_SAMPLE:", sample[:2500])
               except Exception as exc:
                   failed.append(name)
                   data["endpoints"][name] = {
