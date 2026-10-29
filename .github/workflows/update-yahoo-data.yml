@@ -37,7 +37,11 @@ jobs:
               "rosters": f"league/{league}/teams;out=roster",
               "transactions": f"league/{league}/transactions",
               "players": f"league/{league}/players;start=0;count=25",
-          }
+          }          
+          for week in range(1, 26):
+              paths[f"scoreboard_week_{week}"] = (
+                  f"league/{league}/scoreboard;week={week}"
+              )
 
           def convert(element):
               children = list(element)
