@@ -84,7 +84,7 @@ jobs:
                       "data": convert(root)
                   }
                   print(f"{name}: OK ({len(raw)} bytes)")
-                                    if name == "daily_players":
+                  if name == "daily_players":
                       sample = json.dumps(
                           data["endpoints"][name]["data"],
                           ensure_ascii=False
