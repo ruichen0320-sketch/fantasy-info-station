@@ -1,6 +1,6 @@
 {
   "league_id": "10203",
-  "updated_at": "2026-11-07T13:10:33.205156+00:00",
+  "updated_at": "2026-11-07T16:54:27.495270+00:00",
   "endpoints": {
     "standings": {
       "ok": true,
@@ -159,12 +159,12 @@
                   },
                   "waiver_priority": "11",
                   "faab_balance": "100",
-                  "number_of_moves": "3",
+                  "number_of_moves": "4",
                   "number_of_trades": "0",
                   "roster_adds": {
                     "coverage_type": "week",
                     "coverage_value": "3",
-                    "value": "1"
+                    "value": "2"
                   },
                   "league_scoring_type": "head",
                   "draft_position": "2",
@@ -1267,7 +1267,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/standings",
-          "time": "35.638809204102ms",
+          "time": "33.073902130127ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -1460,7 +1460,7 @@
                           "coverage_type": "week",
                           "week": "3",
                           "total": {
-                            "remaining_games": "11",
+                            "remaining_games": "12",
                             "live_games": "0",
                             "completed_games": "30"
                           }
@@ -2241,12 +2241,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -2321,7 +2321,7 @@
                           "coverage_type": "week",
                           "week": "3",
                           "total": {
-                            "remaining_games": "12",
+                            "remaining_games": "9",
                             "live_games": "0",
                             "completed_games": "25"
                           }
@@ -2851,7 +2851,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard",
-          "time": "64.282894134521ms",
+          "time": "67.499160766602ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3143,12 +3143,12 @@
                 },
                 "waiver_priority": "11",
                 "faab_balance": "100",
-                "number_of_moves": "3",
+                "number_of_moves": "4",
                 "number_of_trades": "0",
                 "roster_adds": {
                   "coverage_type": "week",
                   "coverage_value": "3",
-                  "value": "1"
+                  "value": "2"
                 },
                 "league_scoring_type": "head",
                 "draft_position": "2",
@@ -3304,7 +3304,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/teams",
-          "time": "31.507015228271ms",
+          "time": "29.803037643433ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3659,7 +3659,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793976075",
                         "selected_position": {
                           "coverage_type": "date",
@@ -3679,8 +3678,8 @@
                           "ascii_last": "Davis"
                         },
                         "url": "https://sports.yahoo.com/nba/players/5007",
-                        "status": "O",
-                        "status_full": "Out (short-term injury)",
+                        "status": "Q",
+                        "status_full": "Questionable",
                         "injury_note": "Ankle",
                         "editorial_player_key": "nba.p.5007",
                         "editorial_team_key": "nba.t.27",
@@ -3707,8 +3706,7 @@
                             "PF",
                             "F",
                             "C",
-                            "Util",
-                            "IL"
+                            "Util"
                           ]
                         },
                         "eligible_positions_to_add": {
@@ -4778,7 +4776,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1793989676",
+                        "player_notes_last_timestamp": "1794061112",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -5165,7 +5163,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793978149",
                         "selected_position": {
                           "coverage_type": "date",
@@ -5331,7 +5328,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793978182",
                         "selected_position": {
                           "coverage_type": "date",
@@ -5387,7 +5383,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793978945",
                         "selected_position": {
                           "coverage_type": "date",
@@ -5992,7 +5987,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793980278",
                         "selected_position": {
                           "coverage_type": "date",
@@ -6822,7 +6816,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794017760",
+                        "player_notes_last_timestamp": "1794060951",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -8647,7 +8641,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794022611",
+                        "player_notes_last_timestamp": "1794067961",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -9165,8 +9159,8 @@
                           "ascii_last": "Allen"
                         },
                         "url": "https://sports.yahoo.com/nba/players/5835",
-                        "status": "O",
-                        "status_full": "Out (short-term injury)",
+                        "status": "Q",
+                        "status_full": "Questionable",
                         "injury_note": "Knee",
                         "editorial_player_key": "nba.p.5835",
                         "editorial_team_key": "nba.t.5",
@@ -9191,8 +9185,7 @@
                         "eligible_positions": {
                           "position": [
                             "C",
-                            "Util",
-                            "IL"
+                            "Util"
                           ]
                         },
                         "eligible_positions_to_add": {
@@ -9347,12 +9340,12 @@
                 },
                 "waiver_priority": "11",
                 "faab_balance": "100",
-                "number_of_moves": "3",
+                "number_of_moves": "4",
                 "number_of_trades": "0",
                 "roster_adds": {
                   "coverage_type": "week",
                   "coverage_value": "3",
-                  "value": "1"
+                  "value": "2"
                 },
                 "league_scoring_type": "head",
                 "draft_position": "2",
@@ -9977,7 +9970,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794023209",
+                        "player_notes_last_timestamp": "1794068915",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -10095,10 +10088,69 @@
                           "position": "BN",
                           "is_flex": "0"
                         }
+                      },
+                      {
+                        "player_key": "478.p.6219",
+                        "player_id": "6219",
+                        "name": {
+                          "full": "Nic Claxton",
+                          "first": "Nic",
+                          "last": "Claxton",
+                          "ascii_first": "Nic",
+                          "ascii_last": "Claxton"
+                        },
+                        "url": "https://sports.yahoo.com/nba/players/6219",
+                        "status": "O",
+                        "status_full": "Out (short-term injury)",
+                        "injury_note": "Hamstring",
+                        "editorial_player_key": "nba.p.6219",
+                        "editorial_team_key": "nba.t.4",
+                        "editorial_team_full_name": "Chicago Bulls",
+                        "editorial_team_abbr": "CHI",
+                        "editorial_team_url": "https://sports.yahoo.com/nba/teams/chicago/",
+                        "is_keeper": {
+                          "status": "",
+                          "cost": "",
+                          "kept": ""
+                        },
+                        "uniform_number": "9",
+                        "display_position": "C",
+                        "headshot": {
+                          "url": "https://s.yimg.com/iu/api/res/1.2/R3dDlrolVWiIWej0mxQnGw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10142026/6219.1.png",
+                          "size": "small"
+                        },
+                        "image_url": "https://s.yimg.com/iu/api/res/1.2/R3dDlrolVWiIWej0mxQnGw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10142026/6219.1.png",
+                        "is_undroppable": "0",
+                        "position_type": "P",
+                        "primary_position": "C",
+                        "eligible_positions": {
+                          "position": [
+                            "C",
+                            "Util",
+                            "IL"
+                          ]
+                        },
+                        "eligible_positions_to_add": {
+                          "position": [
+                            "PG",
+                            "SG",
+                            "SF",
+                            "PF"
+                          ]
+                        },
+                        "has_player_notes": "1",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1793989314",
+                        "selected_position": {
+                          "coverage_type": "date",
+                          "date": "2026-11-07",
+                          "position": "IL",
+                          "is_flex": "0"
+                        }
                       }
                     ],
                     "_attributes": {
-                      "count": "13"
+                      "count": "14"
                     }
                   }
                 }
@@ -10634,7 +10686,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794022826",
+                        "player_notes_last_timestamp": "1794068771",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -10800,7 +10852,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1793849059",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794061542",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-07",
@@ -11689,7 +11742,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793975551",
                         "selected_position": {
                           "coverage_type": "date",
@@ -12073,7 +12125,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793979692",
                         "selected_position": {
                           "coverage_type": "date",
@@ -12351,7 +12402,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793980129",
                         "selected_position": {
                           "coverage_type": "date",
@@ -12408,7 +12458,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793980106",
                         "selected_position": {
                           "coverage_type": "date",
@@ -12464,7 +12513,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1793975359",
                         "selected_position": {
                           "coverage_type": "date",
@@ -13489,7 +13537,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/teams;out=roster",
-          "time": "94.266891479492ms",
+          "time": "89.257955551147ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -13536,6 +13584,39 @@
           "season": "2026",
           "transactions": {
             "transaction": [
+              {
+                "transaction_key": "478.l.10203.tr.136",
+                "transaction_id": "136",
+                "type": "add",
+                "status": "successful",
+                "timestamp": "1794067906",
+                "players": {
+                  "player": {
+                    "player_key": "478.p.6219",
+                    "player_id": "6219",
+                    "name": {
+                      "full": "Nic Claxton",
+                      "first": "Nic",
+                      "last": "Claxton",
+                      "ascii_first": "Nic",
+                      "ascii_last": "Claxton"
+                    },
+                    "editorial_team_abbr": "CHI",
+                    "display_position": "C",
+                    "position_type": "P",
+                    "transaction_data": {
+                      "type": "add",
+                      "source_type": "freeagents",
+                      "destination_type": "team",
+                      "destination_team_key": "478.l.10203.t.8",
+                      "destination_team_name": "Team Taiwan"
+                    }
+                  },
+                  "_attributes": {
+                    "count": "1"
+                  }
+                }
+              },
               {
                 "transaction_key": "478.l.10203.tr.135",
                 "transaction_id": "135",
@@ -18861,14 +18942,14 @@
               }
             ],
             "_attributes": {
-              "count": "132"
+              "count": "133"
             }
           }
         },
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/transactions",
-          "time": "36.257982254028ms",
+          "time": "37.713050842285ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -19848,7 +19929,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793849059"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794061542"
               },
               {
                 "player_key": "478.p.4840",
@@ -20044,7 +20126,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980106"
               },
               {
@@ -20158,7 +20239,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/players;start=0;count=25",
-          "time": "31.94785118103ms",
+          "time": "23.049116134644ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -21138,7 +21219,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793849059"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794061542"
               },
               {
                 "player_key": "478.p.4840",
@@ -21334,7 +21416,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980106"
               },
               {
@@ -21554,8 +21635,8 @@
                   "ascii_last": "Davis"
                 },
                 "url": "https://sports.yahoo.com/nba/players/5007",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
+                "status": "Q",
+                "status_full": "Questionable",
                 "injury_note": "Ankle",
                 "editorial_player_key": "nba.p.5007",
                 "editorial_team_key": "nba.t.27",
@@ -21582,8 +21663,7 @@
                     "PF",
                     "F",
                     "C",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -22444,7 +22524,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793979692"
               },
               {
@@ -24980,7 +25059,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793976518"
               },
               {
@@ -25530,7 +25608,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794022611"
+                "player_notes_last_timestamp": "1794067961"
               },
               {
                 "player_key": "478.p.5823",
@@ -25681,7 +25759,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793978927"
               },
               {
@@ -25781,7 +25858,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793975359"
               },
               {
@@ -25844,8 +25920,8 @@
                   "ascii_last": "Allen"
                 },
                 "url": "https://sports.yahoo.com/nba/players/5835",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
+                "status": "Q",
+                "status_full": "Questionable",
                 "injury_note": "Knee",
                 "editorial_player_key": "nba.p.5835",
                 "editorial_team_key": "nba.t.5",
@@ -25870,8 +25946,7 @@
                 "eligible_positions": {
                   "position": [
                     "C",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -26078,7 +26153,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794017760"
+                "player_notes_last_timestamp": "1794060951"
               },
               {
                 "player_key": "478.p.5843",
@@ -26279,7 +26354,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793978945"
               },
               {
@@ -28101,7 +28175,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980326"
               },
               {
@@ -28563,8 +28636,8 @@
                   "ascii_last": "Hunter"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6166",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
+                "status": "Q",
+                "status_full": "Questionable",
                 "injury_note": "Illness",
                 "editorial_player_key": "nba.p.6166",
                 "editorial_team_key": "nba.t.23",
@@ -28591,8 +28664,7 @@
                     "SF",
                     "PF",
                     "F",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -31246,7 +31318,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1793989676"
+                "player_notes_last_timestamp": "1794061112"
               },
               {
                 "player_key": "478.p.6420",
@@ -31709,8 +31781,8 @@
                   "ascii_last": "Merrill"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6452",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
+                "status": "Q",
+                "status_full": "Questionable",
                 "injury_note": "Elbow",
                 "editorial_player_key": "nba.p.6452",
                 "editorial_team_key": "nba.t.5",
@@ -31738,8 +31810,7 @@
                     "G",
                     "SF",
                     "F",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -32397,7 +32468,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793975551"
               },
               {
@@ -35827,7 +35897,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980156"
               },
               {
@@ -36135,8 +36204,8 @@
                   "ascii_last": "Williams"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6724",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
+                "status": "Q",
+                "status_full": "Questionable",
                 "injury_note": "Back",
                 "editorial_player_key": "nba.p.6724",
                 "editorial_team_key": "nba.t.25",
@@ -36163,8 +36232,7 @@
                     "PF",
                     "F",
                     "C",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -38151,7 +38219,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793978837"
               },
               {
@@ -39583,7 +39650,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793978149"
               },
               {
@@ -39834,7 +39900,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794023209"
+                "player_notes_last_timestamp": "1794068915"
               },
               {
                 "player_key": "478.p.10101",
@@ -40487,7 +40553,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980278"
               },
               {
@@ -40741,6 +40806,9 @@
                   "ascii_last": "Clowney"
                 },
                 "url": "https://sports.yahoo.com/nba/players/10121",
+                "status": "Q",
+                "status_full": "Questionable",
+                "injury_note": "Illness",
                 "editorial_player_key": "nba.p.10121",
                 "editorial_team_key": "nba.t.17",
                 "editorial_team_full_name": "Brooklyn Nets",
@@ -40778,7 +40846,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1793999317"
+                "player_notes_last_timestamp": "1794064766"
               },
               {
                 "player_key": "478.p.10122",
@@ -41619,6 +41687,7 @@
                 "url": "https://sports.yahoo.com/nba/players/10220",
                 "status": "NA",
                 "status_full": "Not Active",
+                "injury_note": "Undisclosed",
                 "editorial_player_key": "nba.p.10220",
                 "editorial_team_key": "nba.t.28",
                 "editorial_team_full_name": "Toronto Raptors",
@@ -42286,7 +42355,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793978182"
               },
               {
@@ -43288,7 +43356,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794017700"
+                "player_notes_last_timestamp": "1794067275"
               },
               {
                 "player_key": "478.p.10296",
@@ -43448,9 +43516,6 @@
                   "ascii_last": "Topić"
                 },
                 "url": "https://sports.yahoo.com/nba/players/10301",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
-                "injury_note": "Back",
                 "editorial_player_key": "nba.p.10301",
                 "editorial_team_key": "nba.t.25",
                 "editorial_team_full_name": "Oklahoma City Thunder",
@@ -43475,8 +43540,7 @@
                   "position": [
                     "PG",
                     "G",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -43932,7 +43996,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1793980129"
               },
               {
@@ -44372,9 +44435,7 @@
                     "SF",
                     "C"
                   ]
-                },
-                "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793197994"
+                }
               },
               {
                 "player_key": "478.p.10327",
@@ -44964,7 +45025,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793909287"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794066710"
               },
               {
                 "player_key": "478.p.10340",
@@ -45025,7 +45087,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/players;sort_type=date;sort_date=2026-11-07;start=0;count=500",
-          "time": "165.87495803833ms",
+          "time": "143.87822151184ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -46262,12 +46324,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -46620,7 +46682,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=1",
-          "time": "56.199073791504ms",
+          "time": "49.830913543701ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -47858,12 +47920,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -48216,7 +48278,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=2",
-          "time": "66.963911056519ms",
+          "time": "53.524017333984ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -48409,7 +48471,7 @@
                           "coverage_type": "week",
                           "week": "3",
                           "total": {
-                            "remaining_games": "11",
+                            "remaining_games": "12",
                             "live_games": "0",
                             "completed_games": "30"
                           }
@@ -49190,12 +49252,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -49270,7 +49332,7 @@
                           "coverage_type": "week",
                           "week": "3",
                           "total": {
-                            "remaining_games": "12",
+                            "remaining_games": "9",
                             "live_games": "0",
                             "completed_games": "25"
                           }
@@ -49800,7 +49862,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=3",
-          "time": "58.809041976929ms",
+          "time": "52.900075912476ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -49953,7 +50015,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "22",
+                            "remaining_games": "26",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -50943,12 +51005,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -51023,7 +51085,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "46",
+                            "remaining_games": "36",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -51144,7 +51206,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=4",
-          "time": "54.308891296387ms",
+          "time": "48.964977264404ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -51297,7 +51359,7 @@
                           "coverage_type": "week",
                           "week": "5",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "33",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -51744,12 +51806,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -51824,7 +51886,7 @@
                           "coverage_type": "week",
                           "week": "5",
                           "total": {
-                            "remaining_games": "33",
+                            "remaining_games": "34",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -52488,7 +52550,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=5",
-          "time": "55.243968963623ms",
+          "time": "48.782825469971ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -52641,7 +52703,7 @@
                           "coverage_type": "week",
                           "week": "6",
                           "total": {
-                            "remaining_games": "25",
+                            "remaining_games": "27",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -53417,12 +53479,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -53832,7 +53894,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=6",
-          "time": "68.628787994385ms",
+          "time": "55.483818054199ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -53985,7 +54047,7 @@
                           "coverage_type": "week",
                           "week": "7",
                           "total": {
-                            "remaining_games": "22",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -54761,12 +54823,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -55176,7 +55238,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=7",
-          "time": "55.816888809204ms",
+          "time": "60.620069503784ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -55329,7 +55391,7 @@
                           "coverage_type": "week",
                           "week": "8",
                           "total": {
-                            "remaining_games": "31",
+                            "remaining_games": "35",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -56319,12 +56381,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -56520,7 +56582,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=8",
-          "time": "50.92191696167ms",
+          "time": "50.997018814087ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -56673,7 +56735,7 @@
                           "coverage_type": "week",
                           "week": "9",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "32",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -56906,12 +56968,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -56986,7 +57048,7 @@
                           "coverage_type": "week",
                           "week": "9",
                           "total": {
-                            "remaining_games": "33",
+                            "remaining_games": "34",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -57864,7 +57926,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=9",
-          "time": "61.19704246521ms",
+          "time": "48.487901687622ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -58017,7 +58079,7 @@
                           "coverage_type": "week",
                           "week": "10",
                           "total": {
-                            "remaining_games": "27",
+                            "remaining_games": "30",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -59106,12 +59168,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -59208,7 +59270,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=10",
-          "time": "64.001083374023ms",
+          "time": "46.834945678711ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -59361,7 +59423,7 @@
                           "coverage_type": "week",
                           "week": "11",
                           "total": {
-                            "remaining_games": "33",
+                            "remaining_games": "36",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -59380,12 +59442,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -60552,7 +60614,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=11",
-          "time": "56.714057922363ms",
+          "time": "59.476137161255ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -60705,7 +60767,7 @@
                           "coverage_type": "week",
                           "week": "12",
                           "total": {
-                            "remaining_games": "27",
+                            "remaining_games": "31",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -61580,12 +61642,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -61896,7 +61958,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=12",
-          "time": "65.431833267212ms",
+          "time": "50.858020782471ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -62049,7 +62111,7 @@
                           "coverage_type": "week",
                           "week": "13",
                           "total": {
-                            "remaining_games": "27",
+                            "remaining_games": "31",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -62924,12 +62986,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -63004,7 +63066,7 @@
                           "coverage_type": "week",
                           "week": "13",
                           "total": {
-                            "remaining_games": "36",
+                            "remaining_games": "35",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -63240,7 +63302,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=13",
-          "time": "52.987098693848ms",
+          "time": "51.334857940674ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -63393,7 +63455,7 @@
                           "coverage_type": "week",
                           "week": "14",
                           "total": {
-                            "remaining_games": "31",
+                            "remaining_games": "34",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -64054,12 +64116,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -64134,7 +64196,7 @@
                           "coverage_type": "week",
                           "week": "14",
                           "total": {
-                            "remaining_games": "33",
+                            "remaining_games": "34",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -64584,7 +64646,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=14",
-          "time": "60.238122940063ms",
+          "time": "54.612159729004ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -64737,7 +64799,7 @@
                           "coverage_type": "week",
                           "week": "15",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "29",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -65727,12 +65789,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -65928,7 +65990,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=15",
-          "time": "54.869890213013ms",
+          "time": "70.54615020752ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -66081,7 +66143,7 @@
                           "coverage_type": "week",
                           "week": "16",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "33",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -66528,12 +66590,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -66608,7 +66670,7 @@
                           "coverage_type": "week",
                           "week": "16",
                           "total": {
-                            "remaining_games": "34",
+                            "remaining_games": "36",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -67272,7 +67334,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=16",
-          "time": "54.291009902954ms",
+          "time": "46.734094619751ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -67425,7 +67487,7 @@
                           "coverage_type": "week",
                           "week": "17",
                           "total": {
-                            "remaining_games": "32",
+                            "remaining_games": "36",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -68201,12 +68263,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -68281,7 +68343,7 @@
                           "coverage_type": "week",
                           "week": "17",
                           "total": {
-                            "remaining_games": "45",
+                            "remaining_games": "44",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -68616,7 +68678,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=17",
-          "time": "54.487943649292ms",
+          "time": "49.97992515564ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -68769,7 +68831,7 @@
                           "coverage_type": "week",
                           "week": "18",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "33",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -69545,12 +69607,12 @@
                         },
                         "waiver_priority": "11",
                         "faab_balance": "100",
-                        "number_of_moves": "3",
+                        "number_of_moves": "4",
                         "number_of_trades": "0",
                         "roster_adds": {
                           "coverage_type": "week",
                           "coverage_value": "3",
-                          "value": "1"
+                          "value": "2"
                         },
                         "league_scoring_type": "head",
                         "draft_position": "2",
@@ -69960,7 +70022,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=18",
-          "time": "59.466123580933ms",
+          "time": "48.064947128296ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70013,7 +70075,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=19",
-          "time": "14.295101165771ms",
+          "time": "14.356851577759ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70066,7 +70128,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=20",
-          "time": "21.103858947754ms",
+          "time": "13.628005981445ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70119,7 +70181,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=21",
-          "time": "14.603853225708ms",
+          "time": "17.95506477356ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70174,7 +70236,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=22",
-          "time": "11.378049850464ms",
+          "time": "12.005090713501ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70229,7 +70291,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=23",
-          "time": "11.142015457153ms",
+          "time": "11.988878250122ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70284,7 +70346,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=24",
-          "time": "24.127006530762ms",
+          "time": "11.425018310547ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70339,7 +70401,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=25",
-          "time": "10.729074478149ms",
+          "time": "18.898963928223ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
