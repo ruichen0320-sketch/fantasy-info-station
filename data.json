@@ -1,6 +1,6 @@
 {
   "league_id": "10203",
-  "updated_at": "2026-11-12T17:16:27.435018+00:00",
+  "updated_at": "2026-11-12T21:04:18.633293+00:00",
   "endpoints": {
     "standings": {
       "ok": true,
@@ -1267,7 +1267,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/standings",
-          "time": "36.216974258423ms",
+          "time": "35.778999328613ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -1559,7 +1559,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "17",
+                            "remaining_games": "15",
                             "live_games": "0",
                             "completed_games": "20"
                           }
@@ -2321,7 +2321,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "16",
+                            "remaining_games": "14",
                             "live_games": "0",
                             "completed_games": "17"
                           }
@@ -2851,7 +2851,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard",
-          "time": "64.414978027344ms",
+          "time": "64.795017242432ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3304,7 +3304,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/teams",
-          "time": "30.447006225586ms",
+          "time": "31.951904296875ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -3794,9 +3794,6 @@
                           "ascii_last": "Diabaté"
                         },
                         "url": "https://sports.yahoo.com/nba/players/6733",
-                        "status": "P",
-                        "status_full": "Probable",
-                        "injury_note": "Quadriceps",
                         "editorial_player_key": "nba.p.6733",
                         "editorial_team_key": "nba.t.30",
                         "editorial_team_full_name": "Charlotte Hornets",
@@ -3833,7 +3830,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794442226",
+                        "player_notes_last_timestamp": "1794515801",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -5331,7 +5328,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794460788",
+                        "player_notes_last_timestamp": "1794504808",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -5726,7 +5723,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794424424",
                         "selected_position": {
                           "coverage_type": "date",
@@ -6781,7 +6777,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1793911663",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794516650",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -7435,7 +7432,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794462641",
+                        "player_notes_last_timestamp": "1794508968",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -7874,7 +7871,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794460764",
+                        "player_notes_last_timestamp": "1794504969",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -8592,7 +8589,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794502980",
+                        "player_notes_last_timestamp": "1794504263",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -8815,7 +8812,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1793864394",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794508199",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -9094,7 +9092,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794420415",
                         "selected_position": {
                           "coverage_type": "date",
@@ -9261,7 +9258,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794420584",
                         "selected_position": {
                           "coverage_type": "date",
@@ -9321,7 +9317,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794421472",
                         "selected_position": {
                           "coverage_type": "date",
@@ -10551,7 +10546,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794421752",
                         "selected_position": {
                           "coverage_type": "date",
@@ -11344,8 +11338,8 @@
                           "ascii_last": "Murphy III"
                         },
                         "url": "https://sports.yahoo.com/nba/players/6559",
-                        "status": "Q",
-                        "status_full": "Questionable",
+                        "status": "D",
+                        "status_full": "Doubtful",
                         "injury_note": "Knee",
                         "editorial_player_key": "nba.p.6559",
                         "editorial_team_key": "nba.t.3",
@@ -11385,7 +11379,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794441034",
+                        "player_notes_last_timestamp": "1794516536",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -11441,7 +11435,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794420556",
                         "selected_position": {
                           "coverage_type": "date",
@@ -11613,7 +11606,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1794347288",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794515062",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -11778,7 +11772,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1793898920",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794511509",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -12180,8 +12175,8 @@
                           "ascii_last": "James"
                         },
                         "url": "https://sports.yahoo.com/nba/players/3704",
-                        "status": "Q",
-                        "status_full": "Questionable",
+                        "status": "O",
+                        "status_full": "Out (short-term injury)",
                         "injury_note": "Back",
                         "editorial_player_key": "nba.p.3704",
                         "editorial_team_key": "nba.t.20",
@@ -12208,7 +12203,8 @@
                             "SF",
                             "PF",
                             "F",
-                            "Util"
+                            "Util",
+                            "IL"
                           ]
                         },
                         "eligible_positions_to_add": {
@@ -12220,7 +12216,7 @@
                         },
                         "has_player_notes": "1",
                         "has_recent_player_notes": "1",
-                        "player_notes_last_timestamp": "1794501131",
+                        "player_notes_last_timestamp": "1794506858",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -12518,6 +12514,9 @@
                           "ascii_last": "Larsson"
                         },
                         "url": "https://sports.yahoo.com/nba/players/10312",
+                        "status": "Q",
+                        "status_full": "Questionable",
+                        "injury_note": "Illness",
                         "editorial_player_key": "nba.p.10312",
                         "editorial_team_key": "nba.t.14",
                         "editorial_team_full_name": "Miami Heat",
@@ -12555,7 +12554,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1794376584",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794508504",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -12629,6 +12629,9 @@
                           "ascii_last": "Thompson"
                         },
                         "url": "https://sports.yahoo.com/nba/players/4892",
+                        "status": "Q",
+                        "status_full": "Questionable",
+                        "injury_note": "Ankle",
                         "editorial_player_key": "nba.p.4892",
                         "editorial_team_key": "nba.t.14",
                         "editorial_team_full_name": "Miami Heat",
@@ -12666,7 +12669,8 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "player_notes_last_timestamp": "1794376942",
+                        "has_recent_player_notes": "1",
+                        "player_notes_last_timestamp": "1794516770",
                         "selected_position": {
                           "coverage_type": "date",
                           "date": "2026-11-12",
@@ -13219,7 +13223,6 @@
                           ]
                         },
                         "has_player_notes": "1",
-                        "has_recent_player_notes": "1",
                         "player_notes_last_timestamp": "1794420711",
                         "selected_position": {
                           "coverage_type": "date",
@@ -13692,7 +13695,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/teams;out=roster",
-          "time": "94.336032867432ms",
+          "time": "92.787027359009ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -20832,7 +20835,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/transactions",
-          "time": "38.00892829895ms",
+          "time": "39.102077484131ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -20890,8 +20893,8 @@
                   "ascii_last": "James"
                 },
                 "url": "https://sports.yahoo.com/nba/players/3704",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "O",
+                "status_full": "Out (short-term injury)",
                 "injury_note": "Back",
                 "editorial_player_key": "nba.p.3704",
                 "editorial_team_key": "nba.t.20",
@@ -20918,7 +20921,8 @@
                     "SF",
                     "PF",
                     "F",
-                    "Util"
+                    "Util",
+                    "IL"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -20930,7 +20934,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794501131"
+                "player_notes_last_timestamp": "1794506858"
               },
               {
                 "player_key": "478.p.4244",
@@ -21524,7 +21528,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794502980"
+                "player_notes_last_timestamp": "1794504263"
               },
               {
                 "player_key": "478.p.4614",
@@ -21672,7 +21676,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794462641"
+                "player_notes_last_timestamp": "1794508968"
               },
               {
                 "player_key": "478.p.4631",
@@ -21821,7 +21825,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794421752"
               },
               {
@@ -21980,6 +21983,9 @@
                   "ascii_last": "Thompson"
                 },
                 "url": "https://sports.yahoo.com/nba/players/4892",
+                "status": "Q",
+                "status_full": "Questionable",
+                "injury_note": "Ankle",
                 "editorial_player_key": "nba.p.4892",
                 "editorial_team_key": "nba.t.14",
                 "editorial_team_full_name": "Miami Heat",
@@ -22017,7 +22023,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794376942"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516770"
               },
               {
                 "player_key": "478.p.4896",
@@ -22131,7 +22138,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/players;start=0;count=25",
-          "time": "23.605108261108ms",
+          "time": "31.787872314453ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -22189,8 +22196,8 @@
                   "ascii_last": "James"
                 },
                 "url": "https://sports.yahoo.com/nba/players/3704",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "O",
+                "status_full": "Out (short-term injury)",
                 "injury_note": "Back",
                 "editorial_player_key": "nba.p.3704",
                 "editorial_team_key": "nba.t.20",
@@ -22217,7 +22224,8 @@
                     "SF",
                     "PF",
                     "F",
-                    "Util"
+                    "Util",
+                    "IL"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -22229,7 +22237,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794501131"
+                "player_notes_last_timestamp": "1794506858"
               },
               {
                 "player_key": "478.p.4244",
@@ -22823,7 +22831,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794502980"
+                "player_notes_last_timestamp": "1794504263"
               },
               {
                 "player_key": "478.p.4614",
@@ -22971,7 +22979,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794462641"
+                "player_notes_last_timestamp": "1794508968"
               },
               {
                 "player_key": "478.p.4631",
@@ -23120,7 +23128,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794421752"
               },
               {
@@ -23279,6 +23286,9 @@
                   "ascii_last": "Thompson"
                 },
                 "url": "https://sports.yahoo.com/nba/players/4892",
+                "status": "Q",
+                "status_full": "Questionable",
+                "injury_note": "Ankle",
                 "editorial_player_key": "nba.p.4892",
                 "editorial_team_key": "nba.t.14",
                 "editorial_team_full_name": "Miami Heat",
@@ -23316,7 +23326,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794376942"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516770"
               },
               {
                 "player_key": "478.p.4896",
@@ -23472,7 +23483,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794419922"
               },
               {
@@ -24270,9 +24280,7 @@
                     "PF",
                     "C"
                   ]
-                },
-                "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793647632"
+                }
               },
               {
                 "player_key": "478.p.5197",
@@ -25616,7 +25624,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794424424"
               },
               {
@@ -27048,7 +27055,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794460788"
+                "player_notes_last_timestamp": "1794504808"
               },
               {
                 "player_key": "478.p.5739",
@@ -27505,7 +27512,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794421472"
               },
               {
@@ -27654,7 +27660,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420445"
               },
               {
@@ -29773,7 +29778,10 @@
                     "PF",
                     "C"
                   ]
-                }
+                },
+                "has_player_notes": "1",
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794507709"
               },
               {
                 "player_key": "478.p.6044",
@@ -30616,7 +30624,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420584"
               },
               {
@@ -31070,9 +31077,6 @@
                   "ascii_last": "Williams"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6210",
-                "status": "O",
-                "status_full": "Out (short-term injury)",
-                "injury_note": "Hamstring",
                 "editorial_player_key": "nba.p.6210",
                 "editorial_team_key": "nba.t.30",
                 "editorial_team_full_name": "Charlotte Hornets",
@@ -31098,8 +31102,7 @@
                     "PF",
                     "F",
                     "C",
-                    "Util",
-                    "IL"
+                    "Util"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -31111,7 +31114,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794442374"
+                "player_notes_last_timestamp": "1794515427"
               },
               {
                 "player_key": "478.p.6212",
@@ -32492,7 +32495,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793898920"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794511509"
               },
               {
                 "player_key": "478.p.6401",
@@ -33405,7 +33409,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794427001"
               },
               {
@@ -34003,7 +34006,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420556"
               },
               {
@@ -34106,7 +34108,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794347288"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794515062"
               },
               {
                 "player_key": "478.p.6516",
@@ -34571,8 +34574,8 @@
                   "ascii_last": "Murphy III"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6559",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "D",
+                "status_full": "Doubtful",
                 "injury_note": "Knee",
                 "editorial_player_key": "nba.p.6559",
                 "editorial_team_key": "nba.t.3",
@@ -34612,7 +34615,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794441034"
+                "player_notes_last_timestamp": "1794516536"
               },
               {
                 "player_key": "478.p.6560",
@@ -34809,7 +34812,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794424721"
               },
               {
@@ -35755,8 +35757,8 @@
                   "ascii_last": "Watford"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6604",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "O",
+                "status_full": "Out (short-term injury)",
                 "injury_note": "Ankle",
                 "editorial_player_key": "nba.p.6604",
                 "editorial_team_key": "nba.t.3",
@@ -35782,7 +35784,8 @@
                   "position": [
                     "PF",
                     "F",
-                    "Util"
+                    "Util",
+                    "IL"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -35794,7 +35797,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794338809"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516837"
               },
               {
                 "player_key": "478.p.6606",
@@ -35994,7 +35998,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420415"
               },
               {
@@ -36798,8 +36801,8 @@
                   "ascii_last": "Mathurin"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6696",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "D",
+                "status_full": "Doubtful",
                 "injury_note": "Thumb",
                 "editorial_player_key": "nba.p.6696",
                 "editorial_team_key": "nba.t.3",
@@ -36838,7 +36841,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794416148"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516831"
               },
               {
                 "player_key": "478.p.6697",
@@ -37290,7 +37294,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793864394"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794508199"
               },
               {
                 "player_key": "478.p.6708",
@@ -38343,6 +38348,9 @@
                   "ascii_last": "McGowens"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6730",
+                "status": "D",
+                "status_full": "Doubtful",
+                "injury_note": "Elbow",
                 "editorial_player_key": "nba.p.6730",
                 "editorial_team_key": "nba.t.3",
                 "editorial_team_full_name": "New Orleans Pelicans",
@@ -38378,7 +38386,10 @@
                     "PF",
                     "C"
                   ]
-                }
+                },
+                "has_player_notes": "1",
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516963"
               },
               {
                 "player_key": "478.p.6731",
@@ -38489,9 +38500,6 @@
                   "ascii_last": "Diabaté"
                 },
                 "url": "https://sports.yahoo.com/nba/players/6733",
-                "status": "P",
-                "status_full": "Probable",
-                "injury_note": "Quadriceps",
                 "editorial_player_key": "nba.p.6733",
                 "editorial_team_key": "nba.t.30",
                 "editorial_team_full_name": "Charlotte Hornets",
@@ -38528,7 +38536,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794442226"
+                "player_notes_last_timestamp": "1794515801"
               },
               {
                 "player_key": "478.p.6734",
@@ -39124,7 +39132,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420678"
               },
               {
@@ -40960,8 +40967,8 @@
                   "ascii_last": "Jackson-Davis"
                 },
                 "url": "https://sports.yahoo.com/nba/players/10080",
-                "status": "Q",
-                "status_full": "Questionable",
+                "status": "O",
+                "status_full": "Out (short-term injury)",
                 "injury_note": "Illness",
                 "editorial_player_key": "nba.p.10080",
                 "editorial_team_key": "nba.t.28",
@@ -40986,7 +40993,8 @@
                 "eligible_positions": {
                   "position": [
                     "C",
-                    "Util"
+                    "Util",
+                    "IL"
                   ]
                 },
                 "eligible_positions_to_add": {
@@ -40999,7 +41007,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794419568"
+                "player_notes_last_timestamp": "1794515172"
               },
               {
                 "player_key": "478.p.10082",
@@ -42154,7 +42162,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794460764"
+                "player_notes_last_timestamp": "1794504969"
               },
               {
                 "player_key": "478.p.10110",
@@ -42600,7 +42608,10 @@
                     "SG",
                     "C"
                   ]
-                }
+                },
+                "has_player_notes": "1",
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794510392"
               },
               {
                 "player_key": "478.p.10119",
@@ -44461,7 +44472,7 @@
                 },
                 "has_player_notes": "1",
                 "has_recent_player_notes": "1",
-                "player_notes_last_timestamp": "1794440263"
+                "player_notes_last_timestamp": "1794505292"
               },
               {
                 "player_key": "478.p.10280",
@@ -44953,7 +44964,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793911663"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794516650"
               },
               {
                 "player_key": "478.p.10290",
@@ -45102,7 +45114,6 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "has_recent_player_notes": "1",
                 "player_notes_last_timestamp": "1794420476"
               },
               {
@@ -45852,6 +45863,9 @@
                   "ascii_last": "Larsson"
                 },
                 "url": "https://sports.yahoo.com/nba/players/10312",
+                "status": "Q",
+                "status_full": "Questionable",
+                "injury_note": "Illness",
                 "editorial_player_key": "nba.p.10312",
                 "editorial_team_key": "nba.t.14",
                 "editorial_team_full_name": "Miami Heat",
@@ -45889,7 +45903,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1794376584"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794508504"
               },
               {
                 "player_key": "478.p.10313",
@@ -46376,7 +46391,8 @@
                   ]
                 },
                 "has_player_notes": "1",
-                "player_notes_last_timestamp": "1793905214"
+                "has_recent_player_notes": "1",
+                "player_notes_last_timestamp": "1794509532"
               },
               {
                 "player_key": "478.p.10328",
@@ -46984,7 +47000,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/players;sort_type=date;sort_date=2026-11-12;start=0;count=500",
-          "time": "158.46705436707ms",
+          "time": "167.12307929993ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -48579,7 +48595,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=1",
-          "time": "64.848184585571ms",
+          "time": "66.0400390625ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -50175,7 +50191,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=2",
-          "time": "61.992883682251ms",
+          "time": "59.50403213501ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -51771,7 +51787,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=3",
-          "time": "78.143119812012ms",
+          "time": "73.588848114014ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -52063,7 +52079,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "17",
+                            "remaining_games": "15",
                             "live_games": "0",
                             "completed_games": "20"
                           }
@@ -52825,7 +52841,7 @@
                           "coverage_type": "week",
                           "week": "4",
                           "total": {
-                            "remaining_games": "16",
+                            "remaining_games": "14",
                             "live_games": "0",
                             "completed_games": "17"
                           }
@@ -53355,7 +53371,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=4",
-          "time": "63.760042190552ms",
+          "time": "62.628984451294ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -54249,7 +54265,7 @@
                           "coverage_type": "week",
                           "week": "5",
                           "total": {
-                            "remaining_games": "24",
+                            "remaining_games": "21",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -54463,7 +54479,7 @@
                           "coverage_type": "week",
                           "week": "5",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "22",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -54699,7 +54715,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=5",
-          "time": "54.76188659668ms",
+          "time": "64.617872238159ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -55379,7 +55395,7 @@
                           "coverage_type": "week",
                           "week": "6",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -56021,7 +56037,7 @@
                           "coverage_type": "week",
                           "week": "6",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -56043,7 +56059,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=6",
-          "time": "74.804067611694ms",
+          "time": "56.401014328003ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -57151,7 +57167,7 @@
                           "coverage_type": "week",
                           "week": "7",
                           "total": {
-                            "remaining_games": "24",
+                            "remaining_games": "21",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -57266,7 +57282,7 @@
                           "coverage_type": "week",
                           "week": "7",
                           "total": {
-                            "remaining_games": "23",
+                            "remaining_games": "20",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -57387,7 +57403,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=7",
-          "time": "64.511060714722ms",
+          "time": "64.86988067627ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -57853,7 +57869,7 @@
                           "coverage_type": "week",
                           "week": "8",
                           "total": {
-                            "remaining_games": "27",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -58709,7 +58725,7 @@
                           "coverage_type": "week",
                           "week": "8",
                           "total": {
-                            "remaining_games": "32",
+                            "remaining_games": "28",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -58731,7 +58747,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=8",
-          "time": "63.008069992065ms",
+          "time": "57.782888412476ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -58983,7 +58999,7 @@
                           "coverage_type": "week",
                           "week": "9",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -60053,7 +60069,7 @@
                           "coverage_type": "week",
                           "week": "9",
                           "total": {
-                            "remaining_games": "24",
+                            "remaining_games": "21",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -60075,7 +60091,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=9",
-          "time": "64.112901687622ms",
+          "time": "58.082818984985ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -60969,7 +60985,7 @@
                           "coverage_type": "week",
                           "week": "10",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -61183,7 +61199,7 @@
                           "coverage_type": "week",
                           "week": "10",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "26",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -61419,7 +61435,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=10",
-          "time": "51.203012466431ms",
+          "time": "70.355176925659ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -62313,7 +62329,7 @@
                           "coverage_type": "week",
                           "week": "11",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -62741,7 +62757,7 @@
                           "coverage_type": "week",
                           "week": "11",
                           "total": {
-                            "remaining_games": "29",
+                            "remaining_games": "25",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -62763,7 +62779,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=11",
-          "time": "51.630973815918ms",
+          "time": "57.477951049805ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -63443,7 +63459,7 @@
                           "coverage_type": "week",
                           "week": "12",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -63986,7 +64002,7 @@
                           "coverage_type": "week",
                           "week": "12",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "23",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -64107,7 +64123,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=12",
-          "time": "61.355113983154ms",
+          "time": "69.540023803711ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -65330,7 +65346,7 @@
                           "coverage_type": "week",
                           "week": "13",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -65429,7 +65445,7 @@
                           "coverage_type": "week",
                           "week": "13",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -65451,7 +65467,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=13",
-          "time": "70.945024490356ms",
+          "time": "51.208972930908ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -65917,7 +65933,7 @@
                           "coverage_type": "week",
                           "week": "14",
                           "total": {
-                            "remaining_games": "28",
+                            "remaining_games": "24",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -66773,7 +66789,7 @@
                           "coverage_type": "week",
                           "week": "14",
                           "total": {
-                            "remaining_games": "30",
+                            "remaining_games": "26",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -66795,7 +66811,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=14",
-          "time": "50.215005874634ms",
+          "time": "66.092014312744ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -67047,7 +67063,7 @@
                           "coverage_type": "week",
                           "week": "15",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "22",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -67689,7 +67705,7 @@
                           "coverage_type": "week",
                           "week": "15",
                           "total": {
-                            "remaining_games": "31",
+                            "remaining_games": "27",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -68139,7 +68155,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=15",
-          "time": "68.283081054688ms",
+          "time": "71.110010147095ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -69033,7 +69049,7 @@
                           "coverage_type": "week",
                           "week": "16",
                           "total": {
-                            "remaining_games": "25",
+                            "remaining_games": "22",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -69247,7 +69263,7 @@
                           "coverage_type": "week",
                           "week": "16",
                           "total": {
-                            "remaining_games": "30",
+                            "remaining_games": "26",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -69483,7 +69499,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=16",
-          "time": "54.97407913208ms",
+          "time": "57.072877883911ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -70163,7 +70179,7 @@
                           "coverage_type": "week",
                           "week": "17",
                           "total": {
-                            "remaining_games": "34",
+                            "remaining_games": "30",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -70805,7 +70821,7 @@
                           "coverage_type": "week",
                           "week": "17",
                           "total": {
-                            "remaining_games": "34",
+                            "remaining_games": "30",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -70827,7 +70843,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=17",
-          "time": "62.491893768311ms",
+          "time": "65.237045288086ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -71935,7 +71951,7 @@
                           "coverage_type": "week",
                           "week": "18",
                           "total": {
-                            "remaining_games": "26",
+                            "remaining_games": "22",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -72050,7 +72066,7 @@
                           "coverage_type": "week",
                           "week": "18",
                           "total": {
-                            "remaining_games": "25",
+                            "remaining_games": "21",
                             "live_games": "0",
                             "completed_games": "0"
                           }
@@ -72171,7 +72187,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=18",
-          "time": "50.973176956177ms",
+          "time": "60.095071792603ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72224,7 +72240,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=19",
-          "time": "16.857147216797ms",
+          "time": "19.792079925537ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72277,7 +72293,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=20",
-          "time": "13.901948928833ms",
+          "time": "19.10400390625ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72330,7 +72346,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=21",
-          "time": "21.111965179443ms",
+          "time": "14.302968978882ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72385,7 +72401,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=22",
-          "time": "14.113903045654ms",
+          "time": "12.917995452881ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72440,7 +72456,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=23",
-          "time": "13.741016387939ms",
+          "time": "13.6559009552ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72495,7 +72511,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=24",
-          "time": "13.360977172852ms",
+          "time": "17.43483543396ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
@@ -72550,7 +72566,7 @@
         "_attributes": {
           "{http://www.w3.org/XML/1998/namespace}lang": "en-US",
           "{http://www.yahooapis.com/v1/base.rng}uri": "http://pub-api-ro.fantasysports.yahoo.com/fantasy/v2/league/nba.l.10203/scoreboard;week=25",
-          "time": "10.876893997192ms",
+          "time": "12.233972549438ms",
           "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
           "refresh_rate": "30"
         }
